@@ -1,0 +1,59 @@
+<html>
+    <body>
+
+    </body>
+    <script>
+        var wch;
+        var wlen;
+        var warm;
+        var wwaist;
+        var whip;
+        var wheight;
+        var mch;
+        var mlen;
+        var marm;
+        var mwaist;
+        var mheight;
+        var wsize;
+        var msize;
+        if((wch>=28 && wch<=39) && (wlen>=24 && wlen<=26) && (warm>=7 && warm<=8))
+        wsize="imwt01";
+        else if((wch>=39 && wch<=41) && (wlen>=27 && wlen<=29) && (warm>=8 && warm<=9))
+        wsize="imwt02";
+        else if((wch>=41 && wch<=44) && (wlen>=29 && wlen<=31) && (warm>=9 && warm<=10))
+        wsize="imwt03";
+        else if((wwaist>=26 && wwaist<=29) && (whip>=34 && whip<=37) && (wheight>=28 && wheight<=29))
+        wsize="imwb01";
+        else if((wwaist>=30 && wwaist<=32) && (whip>=37 && whip<=40) && (wheight>=29 && wheight<=31))
+        wsize="imwb02";
+        else if((wwaist>=32 && wwaist<=35) && (whip>=40 && whip<=43) && (wheight>=31 && wheight<=32))
+        wsize="imwb03";
+        else{
+            var x= document.getElementById("sizechart");
+            x.innerHTML="Entered measurements are not in proportion!";
+            x.style.display="block";
+        }
+
+        //men
+         if((mch>=35 && mch<=37) && (mlen>=28 && mlen<=30) && (marm>=32 && marm<=33))
+        msize="immt01";
+        else if((mch>=38 && mch<=40) && (mlen>=30 && mlen<=32) && (marm>=33 && marm<=34))
+        msize="immt02";
+        else if((mch>=40 && mch<=44) && (mlen>=32 && mlen<=34) && (marm>=34 && marm<=35))
+        msize="immt03";
+       
+        else if((mwaist>=28 && mwaist<=32)  && (mheight>=28 && mheight<=30))
+        msize="immb01";
+        else if((mwaist>=32 && mwaist<=34)  && (mheight>=30 && mheight<=32))
+        msize="immb02";
+        else if((mwaist>=34 && mwaist<=36)  && (mheight>=32 && mheight<=33))
+        msize="immb03";
+        else{
+            var x= document.getElementById("sizechart");
+            x.innerHTML="Entered measurements are not in proportion!";
+            x.style.display="block";
+            //
+        }
+       
+    </script>
+</html>
